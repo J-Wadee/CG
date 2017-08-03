@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #778899 ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavbarCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="navbar.html">Capital Gaming</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="NavbarCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <!-- Create An Account drop down with form -->
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        <form class="dropdown-menu form-horizontal" style="width:500px; padding:10px">
+                           
+                            <!-- Username -->
+                            <div class="form-group" style="padding:10px; width:500px">
+                                <label for="Username" class="control-label col-sm-3">Username:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="Username">
+                                </div>
+                            </div>
+                            <!-- Username -->
+                            
+                            <!-- Email -->
+                            <div class="form-group" style="padding:10px; width:500px">
+                                <label for="email" class="control-label col-sm-3">Email:</label>
+                                <div class=" col-sm-9">
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            
+                            <!-- Password -->
+                            <div class="form-group" style="width:500px; padding:10px">
+                                <label for="pwd" class="control-label col-sm-3">Password:</label>
+                                <div class="col-sm-9">
+                                <input type="password" class="form-control" id="pwd">
+                                </div>
+                            </div>
+                            <!-- Password -->
+                            
+                            <!-- Verify Password -->
+                            <div class="form-group" style="width:500px; padding:10px">
+                                <label for="pwd" class="control-label col-sm-3">Retype Pwd:</label>
+                                <div class="col-sm-9">
+                                <input type="password" class="form-control" id="pwd">
+                                </div>
+                            </div>
+                            <!-- Verify Password -->
+                            
+                            <!-- State Selection -->
+                            <div class="form-group" style="padding:10px; width:500px">
+	                          <label for="state" class="col-sm-3 control-label">State:</label>
+	                          <div class="col-sm-9">
+	                              <select class="form-control" id="state" name="state">
+	                          	       <option value="">N/A</option>
+	                          	       <option value="AK">Alaska</option>
+	                          	       <option value="AL">Alabama</option>
+	                          	       <option value="AR">Arkansas</option>
+	                          	       <option value="AZ">Arizona</option>
+	                          	       <option value="CA">California</option>
+	                          	       <option value="CO">Colorado</option>
+	                          	       <option value="CT">Connecticut</option>
+	                          	       <option value="DC">District of Columbia</option>
+	                          	       <option value="DE">Delaware</option>
+	                          	       <option value="FL">Florida</option>
+	                          	       <option value="GA">Georgia</option>
+	                          	       <option value="HI">Hawaii</option>
+	                          	       <option value="IA">Iowa</option>
+	                          	       <option value="ID">Idaho</option>
+	                          	       <option value="IL">Illinois</option>
+	                          	       <option value="IN">Indiana</option>
+	                          	       <option value="KS">Kansas</option>
+	                          	       <option value="KY">Kentucky</option>
+	                          	       <option value="LA">Louisiana</option>
+	                          	       <option value="MA">Massachusetts</option>
+	                          	       <option value="MD">Maryland</option>
+	                          	       <option value="ME">Maine</option>
+	                          	       <option value="MI">Michigan</option>
+	                          	       <option value="MN">Minnesota</option>
+	                          	       <option value="MO">Missouri</option>
+	                          	       <option value="MS">Mississippi</option>
+	                          	       <option value="MT">Montana</option>
+	                          	       <option value="NC">North Carolina</option>
+	                          	       <option value="ND">North Dakota</option>
+	                          	       <option value="NE">Nebraska</option>
+	                          	       <option value="NH">New Hampshire</option>
+	                          	       <option value="NJ">New Jersey</option>
+	                          	       <option value="NM">New Mexico</option>
+	                          	       <option value="NV">Nevada</option>
+	                          	       <option value="NY">New York</option>
+	                          	       <option value="OH">Ohio</option>
+	                          	       <option value="OK">Oklahoma</option>
+	                          	       <option value="OR">Oregon</option>
+	                          	       <option value="PA">Pennsylvania</option>
+	                          	       <option value="PR">Puerto Rico</option>
+	                          	       <option value="RI">Rhode Island</option>
+	                          	       <option value="SC">South Carolina</option>
+	                          	       <option value="SD">South Dakota</option>
+	                          	       <option value="TN">Tennessee</option>
+	                          	       <option value="TX">Texas</option>
+	                          	       <option value="UT">Utah</option>
+	                          	       <option value="VA">Virginia</option>
+	                          	       <option value="VT">Vermont</option>
+	                          	       <option value="WA">Washington</option>
+	                          	       <option value="WI">Wisconsin</option>
+	                          	       <option value="WV">West Virginia</option>
+	                          	       <option value="WY">Wyoming</option>
+	                              </select>
+	                          </div>
+                            </div>
+                            <!-- State Selection -->
+                            
+                            <!-- Birthday Selection -->
+                            <div class="form-group" style="padding:10px; width:500px;">
+                                <label for="Birthday" class="control-label col-sm-3" id="Birthday" style="margin-right:15px">Birthday:</label>
+                                    
+                                    <!-- Month -->
+                                    <div class="form-group col-sm-3" style="margin-right:10px">
+                                        <select class="form-control" id="Birthday" style="display:inline-block">
+                                            <option value="">Month</option>
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <!-- Month -->
+                                    
+                                    <!-- Day -->
+                                    <div class="form-group col-sm-3" style="margin-right:10px">
+                                        <select class="form-control" id="Birthday">
+                                            <option value="">Day</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                    <!-- Day -->
+                                    
+                                    <!-- Year -->
+                                    <div class="form-group col-sm-3">
+                                        <select class="form-control" id="Birthday" style="display:inline-block">
+                                            <option value="">Year</option>
+                                            <option value="">2017</option>
+                                            <option value="">2016</option>
+                                            <option value="">2015</option>
+                                            <option value="">2014</option>
+                                            <option value="">2013</option>
+                                            <option value="">2012</option>
+                                            <option value="">2011</option>
+                                            <option value="">2010</option>
+                                            <option value="">2009</option>
+                                            <option value="">2008</option>
+                                            <option value="">2007</option>
+                                            <option value="">2006</option>
+                                            <option value="">2005</option>
+                                            <option value="">2004</option>
+                                            <option value="">2003</option>
+                                            <option value="">2002</option>
+                                            <option value="">2001</option>
+                                            <option value="">2000</option>
+                                            <option value="">1999</option>
+                                            <option value="">1998</option>
+                                            <option value="">1997</option>
+                                            <option value="">1996</option>
+                                            <option value="">1995</option>
+                                            <option value="">1994</option>
+                                            <option value="">1993</option>
+                                            <option value="">1992</option>
+                                            <option value="">1991</option>
+                                            <option value="">1990</option>
+                                            <option value="">1989</option>
+                                            <option value="">1988</option>
+                                            <option value="">1987</option>
+                                            <option value="">1986</option>
+                                            <option value="">1985</option>
+                                            <option value="">1984</option>
+                                            <option value="">1983</option>
+                                            <option value="">1982</option>
+                                            <option value="">1981</option>
+                                            <option value="">1980</option>
+                                            <option value="">1979</option>
+                                            <option value="">1978</option>
+                                            <option value="">1977</option>
+                                            <option value="">1976</option>
+                                            <option value="">1975</option>
+                                            <option value="">1974</option>
+                                        </select>
+                                    </div>
+                                    <!-- Year -->
+                                        
+                            </div>
+                            <!-- Birthday Selection -->
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary col-sm-12">CREATE ACCOUNT</button>
+                            <!-- Submit Button -->
+                            
+                            
+                        </form>
+                    <!-- Create An Account drop down with form -->
+                        
+                        
+                    <!-- Sign In drop down with form --> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        <form class="dropdown-menu" style="width:250px; padding:10px">
+                            <div class="form-group" style="width:230px">
+                                <label for="email">Email Address:</label>
+                                <input type="email" class="form-control " id="email">
+                            </div>
+                            <div class="form-group" style="width:230px">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn  btn-primary">Submit</button>
+                        </form>
+                    </li>
+                    <!-- Sign In drop down with form -->
+                    
+                    
+                </ul>
+            </div>
+            
+            
+         
+        
+        </div>
+    </nav>
+    <!-- Navbar -->
+    
+    <div class="container col-sm-12">
+            
+        <!-- Left Panel -->
+        <div class="container col-sm-3" style="background-color: 0000FF">
+            <h3 class="text-center">Rewards</h3>
+        </div>
+        <!-- Left Panel -->
+        
+        <!-- Main Jumbotron -->
+        <div class="container jumbotron col-sm-6" style="height:200px">
+            <h2 class="text-center">Round Robin Tournaments</h2>
+            
+            <button class="btn-lg btn-primary btn" data-toggle="modal" data-target="#HowItWorks">How It Works</button>
+                <div id="HowItWorks" class="modal fade bg-primary" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title text-center text-primary">How It Works</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-primary">Round Robin tournaments follow the setup of a typical 5-round, single-elimination tournament with slight variations:</p>
+                                <p style="margin-bottom:5px" class="text-primary">1. Teams have 24 hours to complete each round. Rounds may be played at any time within the 24 hour limit. </p>   
+                                <p class=text-primary>2. There does not need to be 32 teams entered in order for the tournament to begin, and there is no limit on how many teams can be entered at once. Teams simply join in at round one, at any time.  </p>
+                                <p class=text-primary>3. Teams play against other teams in the same round. (i.e a team in round one can only play another team in round one, and so on, and so forth. </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div> 
+        </div>
+        <!-- Main Jumbotron -->
+    
+      
+    </div>
+</body>
+
+</html>    
